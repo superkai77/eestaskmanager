@@ -889,7 +889,15 @@
             document.getElementById('modalTitle').textContent = 'Edit Task';
             document.getElementById('projectName').value = task.projectName;
             document.getElementById('inCharge').value = task.inCharge;
-            document.getElementById('dueDate').value = task.dueDate;
+            if (task.dueDate) {
+                const dateObj = new Date(task.dueDate);
+                const year = dateObj.getFullYear();
+                const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+                const day = String(dateObj.getDate()).padStart(2, '0');
+                const formattedDate = `${year}-${month}-${day}`;
+                document.getElementById('dueDate').value = formattedDate;
+            }            
+'            document.getElementById('dueDate').value = task.dueDate;
             document.getElementById('progress').value = task.progress || 0;
             document.getElementById('progressValue').textContent = task.progress || 0;
             document.getElementById('status').value = task.status;
