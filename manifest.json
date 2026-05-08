@@ -1,0 +1,67 @@
+{
+  "name": "EES Task Manager",
+  "short_name": "EES Tasks",
+  "description": "EES Task Manager - Manage your team's projects and tasks efficiently with real-time collaboration"
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231e3a8a' width='192' height='192'/><text x='50%' y='50%' font-size='80' font-weight='bold' fill='%23f97316' text-anchor='middle' dominant-baseline='middle'>📋</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%231e3a8a' width='512' height='512'/><text x='50%' y='50%' font-size='300' font-weight='bold' fill='%23f97316' text-anchor='middle' dominant-baseline='middle'>📋</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "business"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%231e3a8a' width='540' height='720'/><text x='50%' y='50%' font-size='100' fill='%23f97316' text-anchor='middle' dominant-baseline='middle'>📋 EES Task Manager</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%231e3a8a' width='1280' height='720'/><text x='50%' y='50%' font-size='100' fill='%23f97316' text-anchor='middle' dominant-baseline='middle'>📋 EES Task Manager</text></svg>",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Task",
+      "short_name": "Add",
+      "description": "Quickly add a new task",
+      "url": "/?action=add",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231e3a8a' width='192' height='192'/><text x='50%' y='50%' font-size='80' font-weight='bold' fill='%23f97316' text-anchor='middle' dominant-baseline='middle'>➕</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "View Dashboard",
+      "short_name": "Dashboard",
+      "description": "View task dashboard",
+      "url": "/?tab=dashboard",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231e3a8a' width='192' height='192'/><text x='50%' y='50%' font-size='80' font-weight='bold' fill='%23f97316' text-anchor='middle' dominant-baseline='middle'>📊</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}
